@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+    <div class="container text-center">
+        <div class="row">
+          <div class="col">
+          </div>
+          <div class="col-8 ">
+            <img style='width: 30vw;' src="{% static "img/logo.png" %}">       
+            <div class="search-box">
+        <form action="{% url 'search_words' %}" method="get">
+            <div class="input-group mb-3 ">
+              <button type='submit' class="btn btn-outline-secondary search-button" type="button" id="button-addon1"><img width='20' src="{% static "img/search.png" %}"></button>
+              <input type="text" class="search-input form-control" placeholder="" name=q aria-label="Example text with button addon" aria-describedby="button-addon1" required>
+            </div>
+        </form>
+            </div>
+            
+    
+        </div>
+        <div class="col">
+        </div>
+        </div>
+    </div>
+
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button persian-blue" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              ایران72 چیست
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body st">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col">
+                            براساس اطلاعاتی که در منابع آمده است تعداد زبان‌های زنده ایران ۷۶ زبان است. در بین این ۷۶ زبان چیزی حدود نیمی از این زبان‌ها با درجه‌های مختلف در خطر هستند.
+                            جمعیت ایران در پایان سال ۲۰۱۶ میلادی، بر پایه برآوردهای گوناگون میان ۷۹ تا ۸۱ میلیون نفر بوده است. اتنولوگ جمعیت گویشوران زبان‌های گوناگون در ایران در سال ۲۰۱۶ میلادی را به ترتیب زیر بیان کرده است. به این نکته توجه شود که میان قومیت و گویشور تفاوت وجود دارد. برای نمونه میزان جمعیت آذری‌زبانان در جدول لحاظ شده است؛ در حالی که جمعیت آذری تباران اندکی بیش تر است<a target='__blank__' href='https://fa.wikipedia.org/wiki/%D8%B2%D8%A8%D8%A7%D9%86%E2%80%8C%D9%87%D8%A7%DB%8C_%D8%B1%D8%A7%DB%8C%D8%AC_%D8%AF%D8%B1_%D8%A7%DB%8C%D8%B1%D8%A7%D9%86'>[wikipedia]</a>                            
+                        </div>
+                        <div class="col">
+                          <img style='width: 50vw;' src='{% static "img/graph.png" %}'>
+                        </div>
+                    </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed persian-blue" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              سوالات و کنجکاوی
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <div class="container text-center">
+                    <div class="row">
+                      <div class="col">
+                        <div class="card border-info mb-3" style="max-width: 18rem;">
+                            <div class="card-header">فضای مجازی</div>
+                            <div class="card-body">
+                              <h5 class="card-title">آگاهی</h5>
+                              <p class="card-text">قطعا تا الان کامنت هایی رو زیر پست ها دیدی که خیلی برات سوال بوده یعنی چی, الان دیکه میتونی بفهمی!</p>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card border-danger mb-3" style="max-width: 18rem;">
+                            <div class="card-header">ایرانی کیست</div>
+                            <div class="card-body">
+                                <h5 class="card-title">آیا ایرانی فقط انسان فارس است؟</h5>
+                                <p class="card-text">خیر، ایران کشوری چندقومیتی است که علاوه بر فارس‌ها، اقوام دیگری مانند ترک‌ها، کردها، لرها، بلوچ‌ها، عرب‌ها و ترکمن‌ها نیز در آن زندگی می‌کنند. هویت ایرانی بر پایه تنوع فرهنگی و زبانی اقوام مختلف شکل گرفته است، نه صرفاً یک گروه قومی.</p>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card border-danger mb-3" style="max-width: 18rem;">
+                            <div class="card-header">زبان ها</div>
+                            <div class="card-body">
+                                <h5 class="card-title">تعداد زبون های ایران</h5>
+                                <p class="card-text">ایرانی بودن فراتر از زبان و قومیت است؛ این یک افتخار تاریخی است که از دل فرهنگ، تمدن باشکوه، و سرزمین پربار ایران می‌جوشد. هر کسی که قلبش برای این خاک می‌تپد و با افتخار هویت ایرانی را در آغوش می‌گیرد، ایرانی است؛ وارث شکوهی که جهان را به تحسین واداشته! 🌟</p>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed persian-blue" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              من کیستم؟
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body st">
+                من (احسان پسر ایرانزمین) نوسینده, دیزاینر و برنامه نویس سایت ایران۷۲ هستم 
+                داشتم مثل یه روز عادی دیگه زندگی میکردم که دیدم پسر چرا زبون های محلی ایرانزمین دیکشنری قابل استفاده خودشون رو ندارن؟
+                با دوستم درمیون گذاشتم و بهم گفت چون یه کشور نمیتونه بیشتر از یه زبون رسمی داشته باشه, در ایرانزمین زبون ها و گویش های زنده زیادی وجود داره اما بیشتر فارسی صحبت میشه 
+                و بعد من بهش گفتم که خب چرا یکی از بین مردم یک دیکشنری کوچیک بالا نمیاره تا بقیه مردم بتونن با گویش و زبون های مختلف دیگه ی کشورشون آشنا بشن و روابط هموطن ها صمیمی تر بشه؟
+                و اینجا جواب دوستم این بود که خب تو چرا نمیسازی ...؟ پس شروع کردم آوردن سایت رو بالا میدونم احتمالا قبل از من هم خیلی ها ممکنه سعی کرده باشن و وسط راه دیدن هذینه نگه داشتن سرور تماما از جیبه و منم از ماجرا مجزا نیستم, انشالله با حمایت شما ببینیم چقدر میتونم پروژه رو گسترش بدم...
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+{% endblock content %}

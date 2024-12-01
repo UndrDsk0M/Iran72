@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Vazir';
+    src: url('/fonts/Vazir.woff2') format('woff2'),
+         url('/fonts/Vazir.woff') format('woff');
+}
+
+body {
+    font-family: 'Vazir', sans-serif;
+    background-color: #fff !important;
+}
+
+.gold {
+    color: #AE6A0B !important;
+}
+
+.c-nav {
+    border-bottom: 2px solid #AE6A0B !important;
+    background-color: #fff !important;
+}
